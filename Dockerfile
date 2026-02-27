@@ -35,7 +35,7 @@ RUN set -eux \
     && apt-get install -qqy $(curl -fsSL git.io/${DEPENDS_LIST}) tree \
     && apt-get -qqy autoremove --purge \
     && apt-get -qqy clean \
-    && wget --no-check-certificate https://raw.githubusercontent.com/danxiaonuo/openwrtenv-docker/main/scripts/configure.sh \
+    && wget --no-check-certificate https://raw.githubusercontent.com/iii80/openwrtenv-docker/main/scripts/configure.sh \
     && chmod +x configure.sh \
     && ./configure.sh \
     && rm -rf configure.sh
