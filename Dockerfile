@@ -6,7 +6,7 @@
 # Blog: https://www.danxiaonuo.me
 #=================================================
 # 指定构建的基础镜像
-ARG BASE_IMAGE_TAG=20.04
+ARG BASE_IMAGE_TAG=24.04
 FROM ubuntu:${BASE_IMAGE_TAG}
 
 # 作者描述信息
@@ -25,7 +25,7 @@ USER root
 ARG DEBIAN_FRONTEND=noninteractive
 ENV DEBIAN_FRONTEND=$DEBIAN_FRONTEND
 # 依赖包
-ARG DEPENDS_LIST=depends-ubuntu-2004
+ARG DEPENDS_LIST=depends-ubuntu-2404
 ENV DEPENDS_LIST=$DEPENDS_LIST
 
 # 预设环境
